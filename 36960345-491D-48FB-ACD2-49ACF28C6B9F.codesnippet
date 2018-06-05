@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>func applyMotionEffect (toView view: UIView,magnitude:Float){
+    // Paralax Effecti ekleme Fonksiyonu
+    let xMotion = UIInterpolatingMotionEffect(keyPath: "center.x", type: .tiltAlongHorizontalAxis)
+    xMotion.minimumRelativeValue = -magnitude
+    xMotion.maximumRelativeValue = magnitude
+    
+    let yMotion = UIInterpolatingMotionEffect(keyPath: "center.y", type: .tiltAlongVerticalAxis)
+    yMotion.minimumRelativeValue = -magnitude
+    yMotion.maximumRelativeValue = magnitude
+    
+    let group = UIMotionEffectGroup()
+    group.motionEffects = [xMotion,yMotion]
+    
+    view.addMotionEffect(group)
+    
+    
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>36960345-491D-48FB-ACD2-49ACF28C6B9F</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>applyMotionEffect(toView: userTextField, magnitude: 2)  ekle</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>paralaxefektiEkleme</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

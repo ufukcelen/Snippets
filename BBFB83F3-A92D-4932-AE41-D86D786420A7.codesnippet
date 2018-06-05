@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>2boxes</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>if userArray.contains(userTextField.text!){
+            if passArray.contains(passTextField.text!){
+                
+                performSegue(withIdentifier: "to16", sender: self)
+                playSoundSuccess()
+                
+            }else{
+                userTextField.text = ""
+                passTextField.text = ""
+                playSoundError()
+            }
+        }else{
+            userTextField.text = ""
+            passTextField.text = ""
+            playSoundError()
+        }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>BBFB83F3-A92D-4932-AE41-D86D786420A7</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>2 textfieldvar</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Şüphe-2 Boxes Button</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>@IBDesignable
+class myText: UITextField {
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        self.layer.borderColor = UIColor(white : 1 / 255, alpha: 1).cgColor
+        self.layer.borderWidth = 1
+    }
+    
+    override func textRect(forBounds bounds: CGRect) -&gt; CGRect {
+        return bounds.insetBy(dx: 8, dy: 7)
+    }
+    override func editingRect(forBounds bounds: CGRect) -&gt; CGRect {
+        return textRect(forBounds: bounds)
+    }
+    
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>A090CC40-2FA2-46F9-BB54-553929791A54</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Beyaz: UIColor(white : 231 / 255, alpha: 1).cgColor</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>CustomTextField Black</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

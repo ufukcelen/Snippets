@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string> //////////////////////
+ // Nav Bar Title ve Renk
+ 
+ //Arkaplan
+ navigationController?.navigationBar.barTintColor = UIColor.init(red: 48.0/255, green: 20.0/255, blue: 37.0/255, alpha: 1.0)
+ 
+ //Title
+ let textAttributes = [NSAttributedStringKey.foregroundColor:UIColor.orange]
+ navigationController?.navigationBar.titleTextAttributes = textAttributes
+ // Back Title Color
+ navigationController?.navigationBar.tintColor = UIColor.blue
+ ///////////////////////</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>308B52C1-748D-44AD-B3AD-479C4E0C4E89</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Nav Bar Title and Color</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
